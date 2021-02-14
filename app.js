@@ -2,7 +2,7 @@ const request = require('request')
 
 
 const city_name = 'Kanpur'
-const api_key = 'e05f27b4609124c8645cbc0b573670c8'
+const api_key = SECRETS.OpenWeatherMap_APIKEY
 const units = 'metric'
 
 
