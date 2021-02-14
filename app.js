@@ -8,8 +8,13 @@ const units = 'metric'
 
 const  openWeatherUrl = 'https://api.openweathermap.org/data/2.5/weather?q='+city_name+'&appid='+api_key+'&units='+units
 request({url: openWeatherUrl,json: true},(error,response)=>{
-    const data = response.body.main.temp
-    console.log(data)
+
+    if (error){
+        console.log('Error occured in network Connection. Please check your internet connection.')
+    } else{
+        const data = response.body.main
+        console.log(data)
+    }
 })
 
 // const address = 'Kanpur'
