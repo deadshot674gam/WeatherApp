@@ -1,4 +1,3 @@
-const yargs = require('yargs');
 const openweather = require('./utils/openweather');
 
 const city_name = process.argv[2]
